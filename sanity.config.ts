@@ -24,6 +24,7 @@ export default defineConfig({
     structureTool(),
     presentationTool({
       previewUrl: {
+        origin: "https://sanitytestvisualed-f9fvakdxgngeabhc.norwayeast-01.azurewebsites.net/",
         draftMode: {
           enable: "/api/draftmode/enable",
           disable: "/api/draftmode/disable",
