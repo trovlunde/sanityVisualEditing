@@ -11,7 +11,7 @@ import { token } from "@/sanity/lib/token";
 const clientWithToken = client.withConfig({ token });
 
 export async function GET(request: NextRequest) {
-  if (!process.env.SANITY_API_READ_TOKEN) {
+  if (!token) {
     return new Response("Missing environment variable SANITY_API_READ_TOKEN", {
       status: 500,
     });
